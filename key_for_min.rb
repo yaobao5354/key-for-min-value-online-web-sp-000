@@ -10,7 +10,7 @@ def key_for_min_value(name_hash)
     min = []
     name_hash.collect do |item, value|
       min << value
-      if min[0] > value 
+      if min[0] >= value 
         min[0] = value
         min_item << item
       end
