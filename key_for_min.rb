@@ -6,6 +6,8 @@ def key_for_min_value(name_hash)
   if name_hash == []
     return nil
   else
+    item = []
+    value = []
     name_hash.collect do |item, value|
       min = value
       if min < value 
